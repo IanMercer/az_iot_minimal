@@ -1,8 +1,8 @@
 Minimal example of Azure IOT code using a pre-build armhf debian package for the Azure IoT SDK
 
-I would rather not have to do this but I could not find an Azure IoT SDK prebuilt for Raspbian and the
+_I would rather not have to do this but I could not find an Azure IoT SDK prebuilt for Raspbian and the
 instructions to build one are complex and long. If you want to repeat what I've done here, see the
-appendix below.
+appendix below._
 
 Running the sample
 ====
@@ -12,33 +12,34 @@ Add my repository key:
     wget https://signswiftdebian.blob.core.windows.net/apt/key/deb.gpg.key
     sudo apt-key add deb.gpg.key
 
-Edit /etc/apt/sources.list, add the following line:
+Edit `/etc/apt/sources.list` and add the following line:
 
     deb https://signswiftdebian.blob.core.windows.net/apt/ buster main
 
-Now:
+Now download the pre-built Azure IoT SDK package that I made:
 
-   sudo apt-get update
-   sudo apt-get install azure_iot_sdks
+    sudo apt-get update
+    sudo apt-get install azure_iot_sdks
 
-Add your connection string to main.c (this is just the Azure sample file, no changes).
+Add your connection string to main.c (this is just one of the Azure sample files, no changes).
 
 Make and run it
 
-   make
-   sudo chmod+x main
-   ./main
-
+    make
+    sudo chmod+x main
+    ./main
 
 It works! and you didn't need to understand CMake, Parson, a huge directory tree, a complex build system,
-mocking frameworks, testing code, ... This is what a minimal sample for Azure IoT on Raspberry Pi 
-should look like IMHO.
+mocking frameworks, testing code, ... 
+
+_This is what a minimal sample for Azure IoT on Raspberry Pi  should look like IMHO._
+
 
 
 APPENDIX
 ====
 
-You don't need to do any of this if you use my pre-build Debian package.
+_You don't need to do any of this if you use my pre-built Debian package. This is mostly here so I don't need my notes on how to do it next time._
 
 How to build your own Debian package for the Azure IoT SDK for Raspberry Pi.
 ----
