@@ -19,7 +19,7 @@ Edit `/etc/apt/sources.list` and add the following line:
 Now download the pre-built Azure IoT SDK package that I made:
 
     sudo apt-get update
-    sudo apt-get install azure_iot_sdks
+    sudo apt-get install azure-iot-sdks
 
 Add your connection string to main.c (this is just one of the Azure sample files, no changes).
 
