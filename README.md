@@ -68,7 +68,7 @@ cmake --build $DIR/build
 Add the following lines to /sdk/CMakelists.txt
 
 ````
-set(CPACK_PACKAGE_NAME "azure_iot_sdks")
+set(CPACK_PACKAGE_NAME "azure-iot-sdks")
 set(CPACK_PACKAGE_VENDOR "Yourname or Microsoft")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Your name")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Cross-compiled copy of Microsoft's Azurt IoT SDK")
