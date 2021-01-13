@@ -25,9 +25,9 @@ Add your connection string to main.c (this is just one of the Azure sample files
 
 Make and run it
 
-   make
-   sudo chmod+x main
-   ./main
+    make
+    sudo chmod+x main
+    ./main
 
 It works! and you didn't need to understand CMake, Parson, a huge directory tree, a complex build system,
 mocking frameworks, testing code, ... 
