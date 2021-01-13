@@ -1,8 +1,9 @@
-
-# Missing a .PC file for the Azure_iot_sdks
+# Ideally there would be a .pc file in the azure_iot_sdks package
+# but there isn't yet. If there was we could do this ...
 #CFLAGS  = -Wall -Wextra -g `pkg-config --cflags azure_iot_sdks` -I/usr/include
 CFLAGS  = -Wall -Wextra -g -I/usr/include -I/usr/include/azureiot
 
+# This is all the pre-built libraries, remove the ones you don't need
 #LIBS = -lm `pkg-config --libs azure_iot_sdks` -lssl -lcrypto
 LIBS = -lm -lssl -lcrypto -lpthread -lcurl \
 /usr/lib/libiothub_client.a \
@@ -22,5 +23,4 @@ LIBS = -lm -lssl -lcrypto -lpthread -lcurl \
 
 main : main.c
 	gcc -g3 -o main main.c $(CFLAGS) $(LIBS) -DUSE_OPENSSL
-
 
