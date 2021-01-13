@@ -39,7 +39,7 @@ _This is what a minimal sample for Azure IoT on Raspberry Pi  should look like I
 APPENDIX
 ====
 
-You don't need to do any of this if you use my pre-build Debian package.
+_You don't need to do any of this if you use my pre-built Debian package. This is mostly here so I don't need my notes on how to do it next time._
 
 How to build your own Debian package for the Azure IoT SDK for Raspberry Pi.
 ----
